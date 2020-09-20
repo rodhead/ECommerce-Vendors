@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "~perfect-scrollbar/css/perfect-scrollbar.css";
+
+.ps .ps__scrollbar-y-rail {
+  left: 3px;
+  right: auto;
+}
+
+.btn,
+input {
+  height: 34px !important;
+  line-height: 1 !important;
+  min-height: 34px !important;
+}

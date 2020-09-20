@@ -1,0 +1,40 @@
+<div class="p-0 m-0 bg-col">
+  <div class="row">
+    <div class="col-6 full-h bg-pale-yel">
+      <div class="img-container">
+        <img src="assets/images/Logo-black.png" alt="BottomHalf" />
+      </div>
+    </div>
+    <div class="col-6 full-h">
+      <form class="card iform">
+        <label for="title" class="title-lbl text-dark">
+          Welcome To Bottom<span class="text-success">Half</span><br />
+          <span class="text-danger">E-Commerce</span>
+        </label>
+        <div class="form-group">
+          <label for="userid">User Id</label>
+          <input
+            type="email"
+            class="form-control"
+            id="userid"
+            placeholder="Enter email or mobile no#"
+          />
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Password</label>
+          <input
+            type="password"
+            placeholder="Enter your password."
+            class="form-control"
+          />
+        </div>
+        <div class="form-group">
+          <button class="btn btn-success btn-block mb-3" (click)="doLogin()">
+            Login
+          </button>
+          <button class="btn btn-secondary btn-block">Google Login</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
