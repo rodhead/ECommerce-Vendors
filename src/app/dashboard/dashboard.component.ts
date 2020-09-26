@@ -1,11 +1,17 @@
 import { Component, AfterViewInit } from '@angular/core';
+// import { NgbRatingConfig } from '@ng-bootstrap/ng-bootstrap';
 @Component({
     templateUrl: './dashboard.component.html'
 })
 export class DashboardComponent implements AfterViewInit {
     subtitle: string;
-    constructor() {
+    currentRate = 8;
+    constructor( 
+        // config: NgbRatingConfig
+    ) {
         this.subtitle = 'This is some text within a card block.';
+        // config.max = 5;
+        // config.readonly = true;
     }
 
     public lineChartData1: Array<object> = [{ data: [0, 150, 110, 240, 200, 200, 300, 200, 380, 300, 400, 380], label: 'Sales' }];

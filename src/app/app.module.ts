@@ -24,6 +24,10 @@ import { NotfoundComponent } from "./shared/notfound/notfound.component";
 import { LoginComponent } from "./login/login.component";
 import { AjaxService } from "../providers/ajax.service";
 import { iNavigation } from "providers/iNavigation";
+import { DataTablesModule } from 'angular-datatables';
+import { NgxDatatableModule } from '@swimlane/ngx-datatable';
+
+
 
 const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
   suppressScrollX: true,
@@ -52,6 +56,8 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     RouterModule.forRoot(Approutes),
     PerfectScrollbarModule,
     ChartsModule,
+    DataTablesModule,
+    NgxDatatableModule,
   ],
   providers: [
     {
