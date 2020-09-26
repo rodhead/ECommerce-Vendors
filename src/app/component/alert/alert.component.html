@@ -1,16 +1,103 @@
 <div class="row">
     <div class="col-12">
-        <div class="card">
-            <div class="card-body">
-                <h3 class="card-title">Basic Alert</h3>
-                <h6 class="card-subtitle">This is basic alert</h6>
-                <ngb-alert [dismissible]="false">
-                    <strong>Warning!</strong> Better check yourself, you're not looking too good.
-                  </ngb-alert>
-  					
-            </div>
-        </div>
-        <div class="card">
+      <ngb-tabset>
+        <ngb-tab title="Upload Product By Template">
+          <ng-template ngbTabContent>
+            <div class="card">
+              <div class="card-body">
+                  <h3 class="card-title"><strong>Upload Product Inventory (excel)</strong></h3>
+                  <h6 class="card-subtitle">Add Manually or use export options</h6>
+                  <h6 class="card-subtitle">
+                    <div class="row justify-content-between">
+                      <div class="col-8">
+                        <div class="btn-group btn-group-toggle" ngbRadioGroup name="radioBasic" >
+                          <label ngbButtonLabel class="btn-primary border-right mr-1">
+                            <input ngbButton type="radio" [value]="1" ><i class="fa fa-file"></i> Download Template
+                          </label>
+                          <label ngbButtonLabel class="btn-primary border-right mr-1">
+                            <input ngbButton type="radio" value="middle" (click)="uploadExcelTemplate()"><i class="fa fa-file"></i>  Upload Excel
+                          </label>
+                          <label ngbButtonLabel class="btn-primary border-right mr-1">
+                            <input ngbButton type="radio" value="middle" (click)="uploadExcelTemplate()"><i class="fa fa-gears"></i>  Manage Promotion
+                          </label>
+                          <label ngbButtonLabel class="btn-primary">
+                            <input ngbButton type="radio" [value]="false"><i class="fa fa-percent"></i> Manage Discount
+                          </label>
+      
+                          
+                        </div>
+                      </div>
+                      <div class="col-4">
+                        <button type="button" class="btn btn-success btn-rounded pull-right"><i class="fa fa-check"></i> Submit</button>
+                      </div>
+                    </div>
+                   
+                    
+                  </h6>
+                  
+                  <div class="card bg-light">
+                    <div class="card-body">
+                        <h3 class="card-title">Inventory Table</h3>
+                        <h6 class="card-subtitle">Document Details:</h6>
+                        
+                        <p>
+                         Table Here !
+                        </p>
+                    
+                    </div>
+                </div>
+              
+              </div>
+          </div>
+          </ng-template>
+        </ngb-tab>
+        <ngb-tab>
+          <ng-template ngbTabTitle><b>Upload Product Manually</b></ng-template>
+          <ng-template ngbTabContent>
+            <div class="card">
+              <div class="card-body">
+                  <h3 class="card-title"><strong>Upload Product Inventory (Manual)</strong></h3>
+                  <h6 class="card-subtitle">Add Manually or use export options</h6>
+                  <h6 class="card-subtitle">
+                    <div class="btn-group btn-group-toggle" ngbRadioGroup name="radioBasic" >
+                      <label ngbButtonLabel class="btn-primary border-right mr-1">
+                        <input ngbButton type="radio" [value]="1" ><i class="fa fa-gears"></i> Manage Promotion
+                      </label>                      
+                      <label ngbButtonLabel class="btn-primary">
+                        <input ngbButton type="radio" [value]="false"><i class="fa fa-percent"></i> Manage Discount
+                      </label>
+  
+                      
+                    </div>
+                    
+                  </h6>
+                  <div class="card bg-light">
+                    <div class="card-body">
+                        <h3 class="card-title">Inventory Table</h3>
+                        <h6 class="card-subtitle">Document Details:</h6>
+                        
+                        <p>
+                         Table Here !
+                        </p>
+                    
+                    </div>
+                </div>
+              
+              </div>
+          </div>
+          </ng-template>
+        </ngb-tab>
+        <!-- <ngb-tab title="Disabled" [disabled]="false">
+          <ng-template ngbTabContent>
+            <p class="p-t-20">Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth
+            master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh
+            dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum
+            iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+          </ng-template>
+        </ngb-tab> -->
+      </ngb-tabset>
+        
+        <!-- <div class="card">
             <div class="card-body">
                 <h3 class="card-title">Closeable Alert</h3>
                 <h6 class="card-subtitle">This is closeable alert</h6>
@@ -56,5 +143,6 @@
                 </p>
             </div>
         </div>
-    </div>
+    </div> -->
 </div>
+

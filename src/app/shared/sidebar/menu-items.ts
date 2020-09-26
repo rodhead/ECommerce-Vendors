@@ -1,16 +1,16 @@
 import { RouteInfo } from "./sidebar.metadata";
 
 export const ROUTES: RouteInfo[] = [
-  {
-    path: "",
-    title: "Personal",
-    icon: "",
-    class: "nav-small-cap",
-    label: "",
-    labelClass: "",
-    extralink: true,
-    submenu: [],
-  },
+  // {
+  //   path: "",
+  //   title: "Personal",
+  //   icon: "",
+  //   class: "nav-small-cap",
+  //   label: "",
+  //   labelClass: "",
+  //   extralink: true,
+  //   submenu: [],
+  // },
   {
     path: "/dashboard",
     title: "Dashboard",
@@ -21,16 +21,16 @@ export const ROUTES: RouteInfo[] = [
     extralink: false,
     submenu: [],
   },
-  {
-    path: "",
-    title: "UI Components",
-    icon: "",
-    class: "nav-small-cap",
-    label: "",
-    labelClass: "",
-    extralink: true,
-    submenu: [],
-  },
+  // {
+  //   path: "",
+  //   title: "UI Components",
+  //   icon: "",
+  //   class: "nav-small-cap",
+  //   label: "",
+  //   labelClass: "",
+  //   extralink: true,
+  //   submenu: [],
+  // },
   {
     path: "component/accordion",
     title: "Product Inventory",
@@ -152,6 +152,26 @@ export const ROUTES: RouteInfo[] = [
   //   submenu: [],
   // },
   {
+    path: "/component/tabs",
+      title: "Manage Discounts",
+      icon: "mdi mdi-calendar-clock",
+      class: "",
+      label: "",
+      labelClass: "",
+      extralink: false,
+      submenu: [],
+    },
+  {
+     path: "/component/buttons",
+       title: "Manage Promotion ",
+       icon: "mdi mdi-toggle-switch",
+       class: "",
+       label: "",
+       labelClass: "",
+       extralink: false,
+       submenu: [],
+     },
+  {
     path: "/component/cards",
     title: "Customer Support",
     icon: "mdi mdi-blur-radial",
@@ -161,6 +181,27 @@ export const ROUTES: RouteInfo[] = [
     extralink: false,
     submenu: [],
   },
+  
+  {
+       path: "",
+       title: "Admin Console",
+       icon: "",
+       class: "nav-small-cap",
+       label: "",
+       labelClass: "",
+       extralink: true,
+       submenu: [],
+     },
+  {
+    path: "/component/rating",
+    title: "Administration",
+    icon: "mdi mdi-bandcamp",
+    class: "",
+    label: "",
+    labelClass: "",
+    extralink: false,
+    submenu: [],
+  }
   // {
   //   path: "/component/toast",
   //   title: "Toast",
