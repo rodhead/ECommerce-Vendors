@@ -193,7 +193,7 @@ export const ROUTES: RouteInfo[] = [
        submenu: [],
      },
   {
-    path: "/component/rating",
+    path: "/component/buttons",
     title: "Administration",
     icon: "mdi mdi-bandcamp",
     class: "",
